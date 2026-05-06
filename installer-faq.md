@@ -1,7 +1,8 @@
 # MaxOut™ Technology — Installer FAQ
 
 **Audience:** Security alarm installers and technicians  
-**Products:** MaxOut™ wireless RF sensors and detectors  
+**Last Updated:** May 2026  
+**Source:** MaxOutTech.com product manuals and installation guides  
 **Contact:** maxouttech.com | sales@maxouttech.com | 763-497-1059
 
 ---
@@ -39,6 +40,9 @@ A: No. The 319.5 MHz protocol is still fully active through Qolsys (IQ Panel 2 a
 
 **Q: Does the Qolsys IQ Panel 4 support MaxOut sensors?**  
 A: Yes. The IQ Panel 4 uses 319.5 MHz as its native wireless frequency. Enroll MaxOut `-319-NN` sensors the same way as any other 319.5 MHz sensor — via auto-learn or QR scan in the Installer settings.
+
+**Q: Can I mix frequencies on one panel?**  
+A: Only if the panel has a multi-frequency receiver or separate plug-in receiver modules for each frequency. Most panels are single-frequency. Contact the panel manufacturer if unsure whether your specific model supports multiple wireless receivers simultaneously.
 
 ---
 
@@ -105,11 +109,14 @@ A: It can reduce range and affect the magnet gap. MaxOut sensors use a patented 
 **Q: How high should door/window sensors be mounted?**  
 A: Mount at least **5 inches above the floor** to avoid physical damage. Standard practice is top of the door or window frame.
 
+**Q: Should I use screws or double-sided tape for mounting?**  
+A: Both options are included in the box. Use **screws** for permanent installations — they are more secure and provide the best tamper protection. **Double-sided tape** works for clean, dry, flat surfaces and non-permanent installs. For extra tamper security, also use the small screw through the bottom tamper tab after securing with tape.
+
 **Q: Can I mount MaxOut sensors outdoors?**  
 A: Only the **RF-CMDWS-OD** (Extreme Sensor) is rated for outdoor use. It has a water-tight internal gasket and a rugged enclosure tested down to **–32°F (–35.6°C)**. Standard indoor sensors should not be used outdoors.
 
 **Q: How do I mount the outdoor sensor (RF-CMDWS-OD)?**  
-A: Use the included mounting screws, or use plastic zip-tie straps through the sensor housing for post or pipe mounting. Mount the sensor on the non-moving frame/post and the magnet on the moving gate or door.
+A: Use the included mounting screws, or use plastic zip-tie straps through the sensor housing for post or pipe mounting. Mount the sensor on the non-moving frame/post and the magnet on the moving gate or door. Mount with the **water-tight gasket facing down** to prevent water ingress. Always test signal strength from the final outdoor location before permanent installation.
 
 **Q: Where should I mount a PIR motion detector (RF-ARPIR)?**  
 A: Mount on a flat wall or in a corner at **7.5 feet (2.3 m)** height for standard coverage, or up to **10 feet (3 m)**. Face it away from windows, fireplaces, heating vents, and direct sunlight. Mount on an insulated exterior wall facing inward for best performance. Do not place on a shelf — mount permanently to a rigid surface.
@@ -229,6 +236,9 @@ A: Varies by sensor and usage. The RF-SHK shock sensor is rated up to **10 years
 **Q: What should I do when a low battery alert comes in?**  
 A: Replace the battery within **7 days** of the low battery alert. Do not leave the sensor operating on a low battery — transmission reliability degrades before the battery fully dies.
 
+**Q: The panel shows low battery immediately after installing a new sensor.**  
+A: The sensor may have been sitting on a shelf for an extended period. Replace with fresh name-brand lithium batteries (Varta or Panasonic recommended). Do not use generic or alkaline batteries in MaxOut sensors — lithium only.
+
 **Q: The battery pull tab is already removed on a new sensor. How do I enroll it?**  
 A: Press and release the **tamper switch** to trip the sensor and initiate enrollment, or open/close the reed switch (move the magnet). The pull tab is only needed for initial activation on first install.
 
@@ -285,6 +295,30 @@ A: The **RF-KEYFOB-319-NN** is a full system control fob with arm/disarm and pan
 
 ---
 
+## General Best Practices
+
+- **Always perform a walk test** from the final mounting location before securing permanently.
+- Mount sensors **at least 5 inches above the floor** to avoid physical damage.
+- For double doors: put the sensor on the **least-used door** and the magnet on the other.
+- After programming, **exit programming mode completely** and test the zone to confirm it reports correctly.
+- Keep the MaxOut installation manual and PDS in the job folder — they contain model-specific specs.
+- Replace batteries with fresh **name-brand lithium** (Varta or Panasonic) — do not use generic or alkaline.
+
+---
+
+## Troubleshooting — Common Issues
+
+**Q: Sensor shows "Supervisory Loss" or "RF Loss" after installation.**  
+A: Signal is too weak or the sensor is out of range. Move the sensor closer to the panel or wireless receiver, or test an alternate mounting location. Common culprits: masonry walls, metal framing, large HVAC ductwork, or distance from receiver. Walk-test from the new location before remounting.
+
+**Q: Glass-break sensor (RF-ARGB) is not triggering.**  
+A: The RF-ARGB is an **acoustic** detector — it must "hear" the characteristic frequency of breaking glass. Ensure it has a clear acoustic line-of-sight to the protected glass (no curtains or drapes blocking). Test with a proper glass-break simulator tool. Verify the protected glass is within the rated coverage radius (see the installation manual).
+
+**Q: Sensor transmits alarms fine, but the panel never shows low battery or tamper alerts.**  
+A: Check zone programming on the panel. Most panels must be explicitly configured to report supervisory signals, tamper, and low battery for each wireless zone. On VISTA panels, verify RF supervision is enabled for the zone. Refer to the specific panel programming guide.
+
+---
+
 ## Troubleshooting Quick Reference
 
 | Symptom | Likely Cause | Action |
@@ -297,6 +331,16 @@ A: The **RF-KEYFOB-319-NN** is a full system control fob with arm/disarm and pan
 | Tamper alarm won't clear | Cover not fully seated or wall mount loose | Re-seat sensor cover; confirm sensor is flush on wall mount |
 | Water sensor not alarming | Contacts not submerged / requires two detections | Check contact placement; sensor waits for two 5-minute checks |
 | APCMB shows trouble LED | Dirty sensor or end-of-life | Clean sensor chamber or replace unit |
+
+---
+
+## Related Files in This KB
+
+- `00-START-HERE.md` — enrollment summaries and sensor quick reference
+- `frequency-compatibility-and-panel-guide.md` — full panel compatibility details by frequency
+- `product-line-card.md` — full product listing with specs and legacy replacement cross-reference
+- Individual `*_Installation-Manual.md` files — sensor-specific mounting and programming steps
+- Individual `*_PDS.md` files — product data sheets with specifications
 
 ---
 
